@@ -1,0 +1,33 @@
+{
+  "name": "hypixelauctionnewbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtagt/HypixelAuctionNewBackend.git"
+  },
+  "author": "jackson#0001",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jtagt/HypixelAuctionNewBackend/issues"
+  },
+  "homepage": "https://github.com/jtagt/HypixelAuctionNewBackend#readme",
+  "dependencies": {
+    "aws-sdk": "^2.683.0",
+    "axios": "^0.19.2",
+    "elasticsearch": "^16.7.1",
+    "express": "^4.17.1",
+    "http-aws-es": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.16",
+    "node-fetch": "^2.6.0",
+    "redis": "^3.0.2",
+    "redis-clustr": "^1.7.0",
+    "socket.io": "^2.3.0"
+  }
+}
