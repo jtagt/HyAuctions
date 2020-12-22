@@ -32,7 +32,6 @@ class Hypixel {
     async getAuctionPage(page = 0) {
         const url = new URL(AUCTIONS_ROUTE);
         url.searchParams.append('page', page);
-        url.searchParams.append('key', this.rotateToken());
 
         const response = await axios(url.toString());
 
