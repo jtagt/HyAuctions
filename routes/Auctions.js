@@ -46,41 +46,7 @@ router.get('/individual/:id', async (req, res) => {
 });
 
 router.get('/flipper', async (req, res) => {
-    const authorization = req.headers.authorization;
-    if (!authorization) return res.json({ success: true, data: [], clearToken: true });
-
-    let decoded;
-
-    try {
-        decoded = jwt.verify(authorization, config.secret);
-    } catch (e) {
-        return res.json({ success: true, data: [], clearToken: true });
-    }
-
-    const user = await db.member.findById(decoded.id);
-    if (!user.inServer) return res.json({ success: true, data: [], clearToken: false, notInServer: true });
-
-    let url = `${config.auctionManager}/cheap`;
-
-    Object.keys(req.query).forEach((p, i) => {
-        if (i === 0) {
-            url += `?${p}=${req.query[p]}`;
-        } else {
-            url += `&${p}=${req.query[p]}`;
-        }
-    });
-
-    const response = await axios(url,
-        {
-            method: 'POST',
-            data: {
-                filterBy: 'averageFiltered'
-            }
-        });
-
-    const data = response.data;
-
-    res.json(data);
+    res.send('I LOOK LIKE DABABY');
 });
 
 module.exports = router;

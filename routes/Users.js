@@ -49,7 +49,7 @@ router.get('/callback', async (req, res) => {
     if (!userData) await new db.member({ _id: user.id, username: user.username, tag: user.discriminator }).save();
 
     if (userData) await db.member.findByIdAndUpdate(user.id, { $set: { username: user.username, tag: user.discriminator } }, (err, res) => { return res });
-
+    const auth_token = "set token here, setting multiple is against the rules!"
     res.redirect(`${config.rootDomain}/auth?token=${auth_token}`);
 });
 

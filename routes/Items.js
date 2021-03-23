@@ -1,4 +1,7 @@
-const router = require('express').Router();
+// we dont need this
+
+
+/* const router = require('express').Router();
 const Mongo = require('../storage/Mongo');
 
 const StatUtils = require('../utils/StatUtils');
@@ -102,4 +105,4 @@ router.get('/:id/sales', async (req, res) => {
     res.json({ success: true, data: sales });
 });
 
-module.exports = router;
+module.exports = router;*/

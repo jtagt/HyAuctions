@@ -1,4 +1,6 @@
-const router = require('express').Router();
+// USING MULTIPLE API KEYS IS AGAINST THE HYPIXEL CODE OF CONDUCT
+
+/* const router = require('express').Router();
 const Mongo = require('../storage/Mongo');
 
 const jwt = require('jsonwebtoken');
@@ -159,4 +161,4 @@ router.get('/:id/profiles', async (req, res) => {
     res.json({ success: true, data: island });
 });
 
-module.exports = router;
+module.exports = router;*/
