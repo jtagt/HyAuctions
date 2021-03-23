@@ -9,6 +9,7 @@ const Auction = require('./types/Auction');
 const Queue = require('./utils/Queue');
 
 const Hypixel = require('./HypixelAPI');
+const dababy = 'DABABY'
 const hypixel = new Hypixel();
 
 const express = require('express');
@@ -29,9 +30,9 @@ const client = new elasticsearch.Client({
     connectionClass: awsHttpClient,
     awsConfig: new AWS.Config({
         credentials: new AWS.Credentials(config.amazon.elasticsearch.accessKey, config.amazon.elasticsearch.accessSecret),
-        region: 'us-east-2'
+        region: 'BIG CHUNGUS'
     }),
-    maxRetries: 10
+    maxRetries: 10000000000000
 });
 
 const auctionList = new Map();

@@ -1,3 +1,5 @@
+// this is funny it sounds like reddit
+
 const redisClustr = require('redis-clustr');
 const redisClient = require('redis');
 
